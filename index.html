@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sivinash N — Full Stack Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<canvas id="starfield"></canvas>
+
+
+<div class="sidebar-backdrop" id="sidebarBackdrop"></div>
+<div class="sidebar" id="sidebar">
+  <div class="logo">Sivinash N</div>
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+  <a class="resume-btn" href="#" id="resumeLinkMobile" download="Sivinash_N_Resume.pdf">Download Resume</a>
+</div>
+
+<header>
+  <div class="nav-inner">
+    <div class="logo">Sivinash N</div>
+    <nav class="desktop-nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="resume-btn" href="#" id="resumeLink" download="Sivinash_N_Resume.pdf">Resume</a>
+      <a class="icon-btn mobile-resume-btn" href="#" id="resumeLinkIcon" download="Sivinash_N_Resume.pdf" aria-label="Download resume" title="Download resume">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3v12m0 0l-4-4m4 4l4-4M5 19h14"/></svg>
+      </a>
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark or light mode" title="Toggle theme">
+        <svg id="themeIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 12.8A9 9 0 1111.2 3 7 7 0 0021 12.8z"/></svg>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Open menu"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="wrap hero-grid">
+      <div>
+        
+        <h1 id="heroHeading" aria-label="Hi, I'm Sivinash — a Full Stack Developer from Chennai.">
+          <span id="typeTarget"></span><span class="type-caret" aria-hidden="true"></span>
+        </h1>
+        <p class="lead">I build web applications end to end: React or plain JS on the front, Flask on the back, and MySQL underneath. I like taking a feature from a blank schema to a working screen someone can click through.</p>
+        <div class="hero-cta">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-ghost">Contact Me</a>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section class="section-pad" id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>About Me</h2>
+        <p>Education, and a bit about how I got here.</p>
+      </div>
+      <div class="about-grid">
+        <div class="timeline">
+          <div class="tl-item">
+            <h4>BCA, Computer Applications</h4>
+            <div class="tl-org">Patrician College of Arts &amp; Science, University of Madras</div>
+            <div class="tl-meta">2025 · 7.7 CGPA</div>
+          </div>
+          <div class="tl-item">
+            <h4>Higher Secondary (HSC)</h4>
+            <div class="tl-org">St Peter's Boys Higher Secondary School</div>
+            <div class="tl-meta">2022 · 77%</div>
+          </div>
+          <div class="tl-item">
+            <h4>SSLC</h4>
+            <div class="tl-org">St Peter's Boys Higher Secondary School</div>
+            <div class="tl-meta">2020 · 64%</div>
+          </div>
+        </div>
+        <div class="about-text">
+          <p>I'm Sivinash, based in Royapuram, Chennai. I completed my BCA at Patrician College of Arts &amp; Science, University of Madras, where I picked up the basics of programming and stuck with the ones that let me build full things: Python, Flask, React and SQL.</p>
+          <p>Most of what I know comes from projects I built myself — a turf booking platform, an e-commerce client and admin portal — rather than just coursework. I'm comfortable moving between the database, the backend logic, and the interface, and I like being able to own a feature completely rather than just one layer of it.</p>
+          <p>I speak Tamil (native) and English, and I'm currently looking for full-stack roles where I can keep building things people actually use.</p>
+          <div class="cert-row">
+            <div class="cert-chip"><b>Python &amp; Flask Framework</b> — Udemy</div>
+            <div class="cert-chip"><b>MS Word, Excel &amp; PowerPoint</b> — Udemy</div>
+            <div class="cert-chip"><b>Employability Skills</b> — Wadhwani</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad" id="skills">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Skills</h2>
+        <p>What I reach for when building something.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h4>Languages</h4>
+          <div class="chip-list">
+            <span class="chip">Python</span><span class="chip">JavaScript</span><span class="chip">Java</span><span class="chip">C++</span><span class="chip">C</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h4>Frontend</h4>
+          <div class="chip-list">
+            <span class="chip">React.js</span><span class="chip">HTML</span><span class="chip">CSS</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h4>Backend &amp; Database</h4>
+          <div class="chip-list">
+            <span class="chip">Flask</span><span class="chip">SQL</span><span class="chip">MySQL</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h4>Tools</h4>
+          <div class="chip-list">
+            <span class="chip">Git</span><span class="chip">GitHub</span><span class="chip">Excel</span><span class="chip">Word</span><span class="chip">PowerPoint</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-pad" id="experience">
+               <div class="exp-card">
+        <div class="exp-period">Dec 2024 — Jan 2025</div>
+        <div class="exp-role">
+          <h3>Full Stack Web Development Intern</h3>
+          <div class="exp-org">8Queens</div>
+          <ul>
+            <li>Worked on real-world web development tasks across the frontend and backend.</li>
+            <li>Used Python for backend logic and HTML/CSS for building interfaces.</li>
+            <li>Picked up team workflows around version control and code reviews.</li>
+          </ul>
+          
+          </button>
+                    <a class="cert-view-btn" href="img/sivi.pdf" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M1.5 12S5 5 12 5s10.5 7 10.5 7-3.5 7-10.5 7S1.5 12 1.5 12z"/><circle cx="12" cy="12" r="3"/></svg>
+            View Certificate
+          </a>
+        </div>
+      </div>
+  </section>
+
+  <section class="section-pad" id="projects">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Projects</h2>
+        <p>Things I've built from scratch.</p>
+      </div>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-media" id="projectMedia1">
+            <video src="img/turf_booking_vedio.mp4" controls muted playsinline preload="metadata"></video>
+          </div>
+          <div class="project-num">01</div>
+          <h3>Turf Booking System</h3>
+          <h5>Its a academic project - group members(Sivinash , Martin , Sanjaykana)</h5>
+          <p>An e-commerce style platform for booking sports turf slots. Users can search turfs, check availability, book time slots and leave reviews. Built the backend and database myself, with a Flask API driving a booking flow that handles slot conflicts and reviews.</p>
+          <div class="project-tags"><span>Python</span><span>Flask</span><span>MySQL</span><span>HTML/CSS/JS</span></div>
+          <a class="project-link" href="https://github.com/sivinash/turf_booking_using_flask" id="projectLink1" target="_blank" rel="noopener">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
+        </div>
+        <div class="project-card">
+          <div class="project-media" id="projectMedia2">
+            <video src="img/Alpha_electric-electronics.mp4" controls muted playsinline preload="metadata"></video>
+          </div>
+          <div class="project-num">02</div>
+          <h3>Alpha Electric &amp; Electronics</h3>
+          <p>A client-facing e-commerce portal plus a separate admin portal for managing orders and services. Built the client side in React.js talking to a Flask backend, and a dedicated admin portal for order and service management.</p>
+          <div class="project-tags"><span>React.js</span><span>Flask</span><span>MySQL</span></div>
+          <a class="project-link" href="https://github.com/sivinash/Alpha-Admin-portal" id="projectLink2" target="_blank" rel="noopener">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
+        </div>
+      </div>
+
+      <div class="project-grid">
+      
+        <div class="project-card">
+          <div class="project-media" id="projectMedia2">
+            <video src="img/alpha-admin-vd.mp4" controls muted playsinline preload="metadata"></video>
+          </div>
+          <div class="project-num">03</div>
+          <h3>Alpha Electric &amp; Electronics</h3>
+          <p>A client-facing e-commerce portal plus a separate admin portal for managing orders and services. Built the client side in React.js talking to a Flask backend, and a dedicated admin portal for order and service management.</p>
+          <div class="project-tags"><span>React.js</span><span>Flask</span><span>MySQL</span></div>
+          <a class="project-link" href="https://github.com/sivinash/Alpha-client-portal" id="projectLink3" target="_blank" rel="noopener">View project <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M7 7h10v10"/></svg></a>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+</main>
+
+<footer id="contact">
+  <div class="wrap footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="logo"><div class="logo-mark">SN</div>Sivinash N</div>
+        <p>Full Stack Developer based in Chennai — open to full-time roles &amp; internships.</p>
+      </div>
+      <div class="footer-contact">
+        <a class="f-item" href="mailto:sivinash@gmail.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 4h16v16H4z"/><path d="M4 4l8 8 8-8"/></svg>
+          sivinash@gmail.com
+        </a>
+        <a class="f-item" href="tel:+918668025427">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.9v3a2 2 0 01-2.2 2 19.8 19.8 0 01-8.6-3 19.5 19.5 0 01-6-6 19.8 19.8 0 01-3-8.7A2 2 0 014.1 2h3a2 2 0 012 1.7c.1 1 .4 2 .7 3a2 2 0 01-.5 2.1L8 10a16 16 0 006 6l1.2-1.2a2 2 0 012.1-.5c1 .3 2 .5 3 .7a2 2 0 011.7 2z"/></svg>
+          +91 86680 25427
+        </a>
+        <span class="f-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.1-7-11.3A7 7 0 0112 2a7 7 0 017 7.7C19 14.9 12 21 12 21z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          Royapuram, Chennai-13
+        </span>
+        <a class="f-item" href="https://github.com/sivinash" id="githubLink" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 00-1.3-3.2 4.2 4.2 0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 00-6.2 0C6.6 2.7 5.5 3 5.5 3a4.2 4.2 0 00-.1 3.2A4.6 4.6 0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+          <github class="com">
+          <sivinash>https://github.com/sivinash</sivinash>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      © <span id="year"></span> Sivinash N · 
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
